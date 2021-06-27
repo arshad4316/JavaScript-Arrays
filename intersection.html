@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function intersection(setA, setB){
+
+    let intersectionSet = new Set();
+
+    for( let i of setB){
+        if (setA.has(i)){
+            intersectionSet.add(i);
+        }
+        
+    }
+    return intersectionSet;
+}
+ 
+// let setA = new Set(['apple', 'mango', 'orange']);
+// let setB = new Set(['grapes', 'apple', 'banana']);
+
+let setA = new Set([1, 2, 3, 5, 9]);
+let setB = new Set([1, 4, 3, 2, 8]);
+
+
+const result = intersection(setA, setB);
+console.log(result);
+
+</script>
+<body>
+    <p1>
+        concept of intersection
+    </p1>
+    
+</body>
+</html>

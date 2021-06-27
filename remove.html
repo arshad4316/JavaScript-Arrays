@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function removeItemFronArray (array, n) {
+        let newArray= [];
+
+        for ( i =0; i< array.length; i++){
+            if( array[i] !== n){
+                newArray.push(array[i]);
+            }
+        }
+
+        return newArray;
+
+    }
+
+    const result = removeItemFronArray( ['arsh', 'khan', 'mohammad', ], 'khan');
+    const result1 = removeItemFronArray([1,2,3,4,5,6,7,8,9,2,5], 2)
+    console.log(result, result1);
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function twoDimensionArray(a, b){
+        let arr = [];
+
+        for ( let i=0; i < a; i++){
+            for(let j=0; j<b; j++){
+                arr[i]= [];
+            }
+        }
+
+        for ( let i=0; i<a; i++){
+            for(let j=0; j<b; j++){
+                arr[i][j] = j;
+            }
+        }
+        return arr;
+    }
+     const x = 2;
+    //  const x = 3;
+     const y = 8;
+
+     const result = twoDimensionArray(x, y);
+     console.log(result);
+</script>
+<body>
+    <p1>
+        concept of 2D, 3D,4D and so on array
+    </p1>
+</body>
+</html>

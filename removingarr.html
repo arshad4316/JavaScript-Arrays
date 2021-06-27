@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+            //  USING SET
+    // function getUnique(arr){
+    //      let uniqueArr = [...new Set(arr)];
+    //      console.log(uniqueArr)
+    // }
+    //  let arr = [1, 2, 3, 3, 2, 1, 1, 2, 3];
+    //  getUnique(arr);
+
+
+    //  using indexof & push method
+
+    function getUnique(arr) {
+        let uniqueArr = [];
+
+        for ( let i of arr) {
+
+            if( uniqueArr.indexOf(i) === -1) {
+                uniqueArr.push(i);
+            }
+        }
+        console.log(uniqueArr);
+    }
+
+    const arr = [1, 2, 2, 1, 3, 4, 3, 2, 1];
+    getUnique(arr)
+</script>
+<body>
+    <p1>
+        removing dublicate from an array
+    </p1>
+</body>
+</html>

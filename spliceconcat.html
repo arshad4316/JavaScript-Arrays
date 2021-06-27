@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let languages = ["js", 'python', 'java', 'lua'];
+
+    let removed = languages.splice(2, 2, 'c', 'c++');
+    console.log(removed);
+    console.log(languages);
+
+    // concat method
+
+    var languages1= ["js", 'python', 'java', 'lua'];
+    var languages2 = [ 'c', 'c++'];
+
+    var new_arr = languages1.concat(languages2);
+    console.log(new_arr);
+
+    var new_arr1 = languages2.concat( 'arsh', languages1);
+    console.log(new_arr1);
+</script>
+<body>
+    <p1>
+        concept of splice and concat
+    </p1>
+</body>
+</html>

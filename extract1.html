@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function extractedValue(arr, prop){
+        let extractedValue = [];
+
+        for( let i=0; i< arr.length; i++){
+            extractedValue.push(arr[i][prop]);
+        }
+
+        return extractedValue;
+    }
+    
+    objArr = [ {a:2, b:1}, {a:3, b:4}, {a:5, b:8}];
+    const result = extractedValue(objArr, 'a');
+    console.log(result);
+</script>
+<body>
+    <p1>
+        concept of extracted value using loop
+    </p1>
+</body>
+</html>

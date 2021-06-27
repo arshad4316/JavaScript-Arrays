@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    function compareName(a, b){
+
+        const name1 = a.name;
+        const name2 = b.name;
+         let comparision = 0;
+
+         if ( name1 > name2){
+             comparision = 1;
+              
+              }
+              else if(name1 < name2) {
+                  comparision = -1;
+         }
+         return comparision;
+    }
+
+    const students = [{name: 'Sara', age:24},{name: 'John', age:24}, {name: 'Jack', age:25}];
+
+console.log(students.sort(compareName))
+</script>
+<body>
+    <p1>
+        concept of sorting by names
+    </p1>
+</body>
+</html>

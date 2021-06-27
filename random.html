@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function getRandomItem(arr) {
+
+        const randomIndex = Math.floor(Math.random()* arr.length);
+        const item = arr[randomIndex];
+        return item; 
+    }
+    const arr = [1, 2, 3, 4, 'hello', {value: true}, 'arsh'];
+    const result = getRandomItem(arr);
+    console.log(result);
+</script>
+<body>
+    <p1>
+        concept of getting random item
+    </p1>
+</body>
+</html>
